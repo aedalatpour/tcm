@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight"
+    >
+    <TextView
+        android:id="@+id/txt_itemcost_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample1"/>
+    <TextView
+        android:id="@+id/txt_itemcost_smalltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_itemcost_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="sample2"/>
+    <TextView
+        android:id="@+id/txt_itemcost_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1250000"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_marginLeft="@dimen/element_margin"
+        android:layout_toRightOf="@+id/txt_itemcost_unit"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/txt_itemcost_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:text="تومان"
+        />
+
+</RelativeLayout>

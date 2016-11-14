@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">حساب کتاب برنامه ها</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_trips"> سفرها </string>
+    <string name="action_person"> همسفرها </string>
+    <string name="action_name">نام</string>
+    <string name="action_phoneNo">تلفن</string>
+    <string name="action_accountNo">شماره کارت</string>
+    <string name="action_date">تاریخ</string>
+    <string name="action_weight">تعداد نفرات</string>
+    <string name="action_save">ثبت</string>
+    <string name="info">اطلاعات</string>
+    <string name="action_return">  بازگشت &#62;</string>
+    <string name="action_trip"> سفر </string>
+    <string name="action_title"> عنوان </string>
+    <string name="action_persons"> همراهان </string>
+    <string name="action_select"> انتخاب </string>
+    <string name="action_costs">هزینه ها</string>
+    <string name="action_edittrip">ویرایش سفر</string>
+    <string name="action_costdetail">جزئیات خرج</string>
+    <string name="action_amount">مبلغ</string>
+    <string name="action_toalamount">مبلغ کل</string>
+    <string name="action_paidby">پرداخت کننده</string>
+    <string name="action_distributiontype">نحوه توزیع</string>
+    <string name="action_coveredpersons">همراهان مشمول</string>
+    <string name="message_amountconfilict">جمع ریز مبالغ با مقدار وارد شده یکسان نیست!</string>
+    <string-array name="distributiontype">
+        <item>به نسبت تعداد</item>
+        <item>مساوی</item>
+        <item>متفاوت</item>
+    </string-array>
+    <string-array name="covered">
+        <item>همه</item>
+        <item>انتخاب</item>
+    </string-array>
+    <string name="action_refresh">محاسبه مجدد</string>
+    <string name="Sum">جمع</string>
+    <string name="custommode">متفاوت</string>
+    <string name="action_payments">پرداخت ها</string>
+    <string name="action_paymentdetail">جزئیات پرداخت</string>
+    <string name="action_receiver">دریافت کننده</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings2">setting2</string>
+
+
+</resources>

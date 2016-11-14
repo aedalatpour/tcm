@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#3F51B5</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#303F9F</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="textLable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/element_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_content_right</item>
+        <item name="android:textSize">@dimen/lableFontSize</item>
+    </style>
+    <style name="editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/rowHeight</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/light</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_content_right</item>
+    </style>
+
+</resources>

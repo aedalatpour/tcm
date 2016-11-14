@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/lyt_paymentdefine_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarHeight"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_paymentdefine_return"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="@string/action_return"
+            android:textColor="?attr/colorButtonNormal" />
+
+        <TextView
+            android:id="@+id/txt_paymentdefine_headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/action_paymentdetail"
+            android:textSize="@dimen/headerFontSize"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_paymentdefine_save"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="@string/action_save"
+            android:textColor="?attr/colorButtonNormal" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorAccent"
+            android:layout_alignParentBottom="true">
+        </View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/lyt_paymentdefine_actionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_paymentdefine_titlelable"
+                style="@style/textLable"
+                android:text="@string/action_title" />
+
+            <EditText
+                android:id="@+id/txt_paymentdefine_title"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txt_paymentdefine_datelable"
+                android:text="@string/action_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="@dimen/element_margin"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:textSize="@dimen/lableFontSize"
+                />
+            <TextView
+                android:id="@+id/txt_paymentdefine_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_weight="5"
+                android:gravity="center_vertical|right"
+                android:textDirection="rtl"
+                android:paddingLeft="@dimen/element_margin"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:paddingRight="@dimen/element_margin"
+                android:background="@color/light"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/colorAccent"
+                android:layout_marginRight="@dimen/activity_content_right"
+                ></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_paymentdefine_amountlable"
+                style="@style/textLable"
+                android:text="@string/action_amount" />
+
+            <EditText
+                android:id="@+id/txt_paymentdefine_amount"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/element_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_paymentdefine_paidbylable"
+                style="@style/textLable"
+                android:text="@string/action_paidby" />
+
+            <Spinner
+                android:id="@+id/spn_paymentdefine_paidby"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="right"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_paymentdefine_receiverlable"
+                style="@style/textLable"
+                android:text="@string/action_receiver" />
+
+            <Spinner
+                android:id="@+id/spn_paymentdefine_receiver"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="right"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

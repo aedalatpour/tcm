@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lyt_costdefine_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarHeight"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_costdefine_return"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="@string/action_return"
+            android:textColor="?attr/colorButtonNormal" />
+
+        <TextView
+            android:id="@+id/txt_costdefine_headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/action_costdetail"
+            android:textSize="@dimen/headerFontSize"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_costdefine_save"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="@string/action_save"
+            android:textColor="?attr/colorButtonNormal" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorAccent"
+            android:layout_alignParentBottom="true">
+        </View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/lyt_costdefine_actionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_costdefine_titlelable"
+                style="@style/textLable"
+                android:text="@string/action_title" />
+
+            <EditText
+                android:id="@+id/txt_costdefine_title"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_costdefine_amountlable"
+                style="@style/textLable"
+                android:text="@string/action_amount" />
+
+            <EditText
+                android:id="@+id/txt_costdefine_amount"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/element_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_costdefine_paidbylable"
+                style="@style/textLable"
+                android:text="@string/action_paidby" />
+
+            <Spinner
+                android:id="@+id/spn_costdefine_paidby"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="right"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textDirection="rtl" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_costdefine_distributiontypelable"
+                style="@style/textLable"
+                android:text="@string/action_distributiontype" />
+
+
+            <Spinner
+                android:id="@+id/spn_costdefine_distributiontype"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+                android:background="@color/light"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textDirection="rtl"
+                android:entries="@array/distributiontype"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editRowHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_costdefine_coveredpersonslable"
+                style="@style/textLable"
+                android:text="@string/action_coveredpersons" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:layout_weight="5"
+
+                >
+                <Switch
+                    android:id="@+id/swh_costdefine_custommode"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/iconSize"
+                    android:layout_weight="2"
+                    android:layout_marginRight="@dimen/element_margin"
+                    android:paddingRight="@dimen/element_margin"
+                    android:background="@color/light"
+                    android:text="@string/custommode"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center"/>
+            <!--<Button-->
+                    <!--android:id="@+id/btn_costdefine_preview"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="@dimen/iconSize"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textSize="@dimen/lableFontSize"-->
+                    <!--android:text="@string/action_refresh"/>-->
+                <Spinner
+                    android:id="@+id/spn_costdefine_coveredpersons"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/light"
+                    android:gravity="center_vertical"
+                    android:textDirection="rtl"
+                    android:entries="@array/covered"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/activity_content_right"
+                android:background="?attr/colorAccent"></View>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lsv_costdefine_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </ListView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="@dimen/activity_content_right"
+            android:background="?attr/colorAccent"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_costdefine_sumamount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="00"/>
+            <TextView
+                android:id="@+id/txt_costdefine_sum"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/Sum"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/activity_content_right"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

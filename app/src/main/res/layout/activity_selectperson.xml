@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lyt_tripdefine_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarHeight"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary">
+        <Button
+            android:id="@+id/btn_tripdefine_return"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_centerVertical="true"
+            android:textColor="?attr/colorButtonNormal"
+            android:background="@android:color/transparent"
+            android:text="@string/action_return"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/headerFontSize"
+            android:text="@string/action_persons"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btn_selectperson_select"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="?attr/colorButtonNormal"
+            android:background="@android:color/transparent"
+            android:text="@string/action_save"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorAccent"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lsv_selectperson_list"
+        android:layout_below="@+id/lyt_tripdefine_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    </ListView>
+
+</RelativeLayout>
