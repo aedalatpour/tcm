@@ -25,6 +25,7 @@ import controller.adapter.MainPagerAdapter;
  */
 
 public class MainActivity extends AppCompatActivity {
+    String sampletest;
     TextView txt_main_headertitle;
     TabLayout tabLayout;
     Toolbar toolbar;
